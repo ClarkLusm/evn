@@ -1,0 +1,160 @@
+body {
+  font-size: 16px;
+  font-family: "SVN-Gilroy";
+  background-color: #EDF3FB;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+.box {
+  background-color: #FFF;
+  border: 1px solid #F2F2F5;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #243134;
+  margin-bottom: 20px;
+}
+
+.header {
+  background-color: #FFF;
+  max-height: 84px;
+  padding: 18px 24px;
+  border-bottom: 1px solid #EBEBF0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+}
+.user-area_notify {
+  position: relative;
+  margin-right: 40px;
+  background: unset;
+  border: none;
+}
+.user-area_notify .dot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #3BA815;
+}
+.user-area_display {
+  display: flex;
+}
+.user-area_display button.dropdown-toggle {
+  background-color: unset;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.user-area_display button.dropdown-toggle::after {
+  display: none;
+}
+.user-area_display button.dropdown-toggle:hover, .user-area_display button.dropdown-toggle:active, .user-area_display button.dropdown-toggle:focus {
+  background-color: unset;
+  border: none;
+}
+.user-area_display__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.user-area_display__fullname {
+  color: #243134;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+aside {
+  width: 250px;
+  min-height: calc(100vh - 84px);
+  background-color: #FFF;
+}
+aside ul {
+  margin: 32px 0;
+  padding: 0 12px 0 0;
+}
+aside ul li {
+  position: relative;
+  padding: 16px 20px;
+  background-color: #FFF;
+  border-radius: 0px 16px 16px 0px;
+  transition: all 0.3s;
+}
+aside ul li a {
+  color: #77888D;
+}
+aside ul li a img {
+  margin-right: 10px;
+}
+aside ul li.active {
+  background-color: #F2F2F5;
+}
+aside ul li.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #0682F4;
+}
+aside ul li.active a {
+  color: #0682F4;
+}
+
+main {
+  padding: 24px;
+  flex: 1;
+}
+main .main-breadcrumb {
+  margin-bottom: 24px;
+}
+main .main-breadcrumb ul li a {
+  color: #333333;
+}
+main .main-breadcrumb ul li span {
+  color: #0682F4;
+  font-weight: 600;
+}
+main .main-nav {
+  background-color: #FFF;
+  border: none;
+  border-radius: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+main .main-nav .nav-link {
+  border: none;
+  color: #333333;
+  font-weight: 600;
+}
+main .main-nav .nav-link.active {
+  color: #0682F4;
+  border-bottom: 3px solid #0682F4;
+}

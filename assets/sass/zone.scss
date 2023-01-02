@@ -1,0 +1,278 @@
+@import './variables.scss';
+
+.form-filter {
+  margin-bottom: 18px;
+
+  .form-select,
+  .form-control {
+    background-color: $lightColor;
+    outline: none;
+
+    &:focus {
+      outline: none;
+      box-shadow: unset;
+    }
+  }
+
+  .search-input {
+    position: relative;
+
+    input {
+      padding-right: 30px;
+    }
+
+    button {
+      position: absolute;
+      top: 4px;
+      right: 0;
+      border: none;
+      background: unset;
+      color: $primaryColor;
+    }
+  }
+}
+
+.sub-breadcrumb {
+  color: $warningColor;
+  font-weight: 500;
+  margin-bottom: $space;
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+
+    li {
+      display: flex;
+
+      &:first-child {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .divider {
+    margin: 0 4px;
+  }
+}
+
+.list-block {
+  margin-bottom: $space;
+
+  &_item {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+
+    label {
+      font-size: $fontSize;
+      font-weight: bold;
+      line-height: 28px;
+    }
+
+    .badge {
+      background: rgba(193, 10, 10, 0.15);
+      border-radius: 50px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: $dangerColor;
+      height: 23px;
+      margin-left: 11px;
+      display: flex;
+      align-items: center;
+      padding: 2px 4px;
+    }
+
+    p {
+      color: $successColor;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 28px;
+      margin: 8px 0 4px;
+
+      span {
+        font-weight: 500;
+        font-size: $fontSize;
+        line-height: 17px;
+        color: #828282;
+      }
+    }
+
+    small {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 13px;
+      color: $textColor;
+
+      span {
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+
+.chart-bar,
+.chart-rate {
+  padding: 28px $space 30px;
+
+  .chart-title {
+    span {
+      font-weight: 500;
+      font-size: $fontSize;
+      line-height: 17px;
+      color: $dangerColor;
+    }
+  }
+}
+
+
+.chart-bar {
+  .sub-nav {
+    background-color: #EFF7FF;
+    border: none;
+    margin-bottom: 20px;
+
+    .nav-link {
+      border: none;
+      color: $textColor1;
+      margin: 0 10px;
+      font-weight: 500;
+
+      &.active {
+        background-color: unset;
+        color: $primaryColor;
+        font-weight: bold;
+        border-bottom: 3px solid $primaryColor;
+      }
+    }
+  }
+
+  .tab-content {
+    .tab-pane {
+      position: relative;
+
+      button {
+        position: absolute;
+        right: -18px;
+        bottom: 5px;
+        border-radius: 50%;
+        background: unset;
+        border: 1px solid #A8C8E7;
+        height: 18px;
+        width: 18px;
+        color: #A8C8E7;
+        padding: 0;
+        font-size: 10px;
+
+        &:hover {
+          color: $primaryColor;
+          border-color: $primaryColor;
+
+          img {
+            fill: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  $space: 12px;
+  $fontSize: 14px;
+
+  body {
+    font-size: $fontSize;
+  }
+
+  .title {
+    font-size: $fontSize;
+    margin-bottom: $space;
+  }
+
+  .header {
+    padding: $space;
+  }
+
+  .user-area {
+    &_notify {
+      margin-right: 8px;
+
+      img {
+        width: 20px;
+      }
+    }
+
+    &_display {
+      .dropdown-menu {
+        font-size: $fontSize;
+      }
+
+      &__avatar {
+        width: 32px;
+        height: 32px;
+        margin-right: 4px;
+      }
+
+      &__fullname {
+        font-size: $fontSize;
+      }
+    }
+  }
+
+  aside {
+    width: 70px;
+
+    ul {
+      li {
+        a {
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    padding: $space;
+
+    .main-breadcrumb {
+      margin-bottom: 12px;
+    }
+
+    .form-filter {
+
+      .form-control,
+      .form-select {
+        font-size: $fontSize;
+      }
+    }
+
+    .list-block {
+      &_item {
+        padding: $space;
+
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .chart-bar,
+    .chart-rate {
+      padding: 16px $space 20px;
+      margin-bottom: $space;
+
+      &_title {
+
+        span {
+          font-size: $fontSize;
+        }
+      }
+    }
+
+  }
+}

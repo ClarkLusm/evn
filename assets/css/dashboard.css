@@ -1,0 +1,125 @@
+.topcity-report {
+  padding: 28px 24px 30px;
+  margin-bottom: 24px;
+}
+
+.summary-block_01 {
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+}
+.summary-block_01 .col-text {
+  width: 50%;
+}
+.summary-block_01 .col-text label {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
+}
+.summary-block_01 .col-text p {
+  color: #3BA815;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 28px;
+  margin: 8px 0 4px;
+}
+.summary-block_01 .col-text p span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  color: #828282;
+}
+.summary-block_01 .col-text small {
+  font-weight: 600;
+  font-size: 14px;
+}
+.summary-block_01 .col-text small span {
+  color: #C71026;
+  font-weight: 500;
+}
+.summary-block_01 .col-chart {
+  width: 50%;
+  background-color: #EAF5FF;
+  border-radius: 12px;
+  padding-bottom: 12px;
+}
+.summary-block_01 .col-chart label {
+  display: block;
+  border-bottom: 1px solid #D0E3F4;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.total-device {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.total-device img {
+  margin-bottom: 8px;
+}
+.total-device_title {
+  color: #0682F4;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+}
+.total-device_desc {
+  color: black;
+  font-weight: 600;
+}
+
+.status-report {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.specific-city {
+  padding: 24px 12px;
+}
+
+.city-report,
+.device-report {
+  padding: 24px 12px;
+}
+
+.city-report_title h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.city-report p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #243134;
+}
+.city-report p span {
+  color: #C71026;
+  font-size: 10px;
+}
+.city-report p small {
+  color: #585656;
+  font-size: 12px;
+}
+.city-report table {
+  width: 100%;
+}
+.city-report table tr td {
+  padding: 8px 4px;
+}
+.city-report table tr td:first-child {
+  font-weight: 600;
+}
+.city-report table tr td:last-child {
+  text-align: center;
+}
+.city-report table tr td.txt-success {
+  color: #3BA815;
+}

@@ -1,0 +1,97 @@
+@media screen and (max-width: 576px) {
+  $space: 12px;
+  $fontSize: 14px;
+
+  body {
+    font-size: $fontSize;
+  }
+
+  .title {
+    font-size: $fontSize;
+    margin-bottom: $space;
+  }
+
+  .header {
+    padding: $space;
+  }
+
+  .user-area {
+    &_notify {
+      margin-right: 8px;
+
+      img {
+        width: 20px;
+      }
+    }
+
+    &_display {
+      .dropdown-menu {
+        font-size: $fontSize;
+      }
+
+      &__avatar {
+        width: 32px;
+        height: 32px;
+        margin-right: 4px;
+      }
+
+      &__fullname {
+        font-size: $fontSize;
+      }
+    }
+  }
+
+  aside {
+    width: 70px;
+
+    ul {
+      li {
+        a {
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    padding: $space;
+
+    .main-breadcrumb {
+      margin-bottom: 12px;
+    }
+
+    .form-filter {
+
+      .form-control,
+      .form-select {
+        font-size: $fontSize;
+      }
+    }
+
+    .list-block {
+      &_item {
+        padding: $space;
+
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .chart-bar,
+    .chart-rate {
+      padding: 16px $space 20px;
+      margin-bottom: $space;
+
+      &_title {
+
+        span {
+          font-size: $fontSize;
+        }
+      }
+    }
+
+  }
+}

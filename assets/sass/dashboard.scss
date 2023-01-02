@@ -1,0 +1,159 @@
+@import './variables.scss';
+
+.topcity-report {
+  padding: 28px $space 30px;
+  margin-bottom: $space;
+}
+
+.summary-block {
+
+  &_01 {
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+
+    .col {
+      &-text {
+        width: 50%;
+
+        label {
+          font-size: $fontSize;
+          font-weight: bold;
+          line-height: 28px;
+        }
+
+        p {
+          color: $successColor;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 28px;
+          margin: 8px 0 4px;
+
+          span {
+            font-weight: 500;
+            font-size: $fontSize;
+            line-height: 17px;
+            color: #828282;
+          }
+        }
+
+        small {
+          font-weight: 600;
+          font-size: 14px;
+
+          span {
+            color: $dangerColor;
+            font-weight: 500;
+          }
+        }
+      }
+
+      &-chart {
+        width: 50%;
+        background-color: #EAF5FF;
+        border-radius: 12px;
+        padding-bottom: calc($space / 2);
+
+        label {
+          display: block;
+          border-bottom: 1px solid #D0E3F4;
+          text-align: center;
+          padding: 12px;
+          margin-bottom: $space;
+          font-size: 14px;
+        }
+      }
+    }
+
+  }
+}
+
+.total-device {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  img {
+    margin-bottom: 8px;
+  }
+
+  &_title {
+    color: $primaryColor;
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
+  }
+
+  &_desc {
+    color: black;
+    font-weight: 600;
+  }
+}
+
+.status-report {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.specific-city {
+  padding: $space 12px;
+}
+
+.city-report,
+.device-report {
+  padding: $space 12px;
+}
+
+.city-report {
+
+  &_title {
+    h3 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 600;
+    color: $textColor3;
+
+    span {
+      color: $dangerColor;
+      font-size: 10px;
+    }
+
+    small {
+      color: $textColor1;
+      font-size: 12px;
+    }
+  }
+
+  table {
+    width: 100%;
+
+    tr {
+      td {
+        padding: 8px 4px;
+
+        &:first-child {
+          font-weight: 600;
+        }
+
+        &:last-child {
+          text-align: center;
+        }
+
+        &.txt-success {
+          color: $successColor;
+        }
+      }
+    }
+  }
+}

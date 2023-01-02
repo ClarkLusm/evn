@@ -70,31 +70,8 @@ new Chart(document.getElementById('barchart'), {
         },
         stacked: true,
         ticks: {
-          maxTicksLimit: 20,
-          padding: 10,
-          min: 0,
-          max: 5,
-          stepSize: 5,
-          suggestedMin: 0.5,
-          suggestedMax: 5.5,
-          callback: function (label, index, labels) {
-            switch (label) {
-              case 0:
-                return '<b>a</b>';
-              case 1:
-                return 'ONE';
-              case 2:
-                return 'TWO';
-              case 3:
-                return 'THREE';
-              case 4:
-                return 'FOUR';
-              case 5:
-                return 'FIVE';
-            }
-          }
-        },
-
+          color: 'black',
+        }
       },
     }
   },

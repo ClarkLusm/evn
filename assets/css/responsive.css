@@ -1,0 +1,60 @@
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .header {
+    padding: 12px;
+  }
+  .user-area_notify {
+    margin-right: 8px;
+  }
+  .user-area_notify img {
+    width: 20px;
+  }
+  .user-area_display .dropdown-menu {
+    font-size: 14px;
+  }
+  .user-area_display__avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+  }
+  .user-area_display__fullname {
+    font-size: 14px;
+  }
+  aside {
+    width: 70px;
+  }
+  aside ul li a span {
+    display: none;
+  }
+  main {
+    padding: 12px;
+  }
+  main .main-breadcrumb {
+    margin-bottom: 12px;
+  }
+  main .form-filter .form-control,
+  main .form-filter .form-select {
+    font-size: 14px;
+  }
+  main .list-block_item {
+    padding: 12px;
+  }
+  main .list-block_item p {
+    font-size: 24px;
+  }
+  main .chart-bar,
+  main .chart-rate {
+    padding: 16px 12px 20px;
+    margin-bottom: 12px;
+  }
+  main .chart-bar_title span,
+  main .chart-rate_title span {
+    font-size: 14px;
+  }
+}

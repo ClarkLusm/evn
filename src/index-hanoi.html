@@ -37,8 +37,7 @@
   <div class="d-flex">
     <aside>
       <ul>
-        <li class="active"><a href="./index.html"><img src="../assets/images/element_equal-active.svg" alt="">
-            <span>Trang
+        <li class="active"><a href="index.html"><img src="../assets/images/element_equal-active.svg" alt=""> <span>Trang
               chủ</span></a>
         </li>
         <li>
@@ -64,12 +63,12 @@
       </div>
       <ul class="nav nav-tabs main-nav" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="summary-tab" data-bs-toggle="tab" data-bs-target="#summary-tab-pane"
+          <button class="nav-link active" id="summary-tab" data-bs-toggle="tab" data-bs-target="#summary-tab-pane"
             type="button" role="tab">Tổng quan</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="zone-tab" data-bs-toggle="tab" data-bs-target="#zone-tab-pane"
-            type="button" role="tab" aria-controls="zone-tab-pane" aria-selected="false">Khu vực</button>
+          <button class="nav-link" id="zone-tab" data-bs-toggle="tab" data-bs-target="#zone-tab-pane" type="button"
+            role="tab" aria-controls="zone-tab-pane" aria-selected="false">Khu vực</button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="device-tab" data-bs-toggle="tab" data-bs-target="#device-tab-pane" type="button"
@@ -77,7 +76,7 @@
         </li>
       </ul>
       <div class="tab-content">
-        <div class="tab-pane fade" id="summary-tab-pane" role="tabpanel" tabindex="0">
+        <div class="tab-pane fade show active" id="summary-tab-pane" role="tabpanel" tabindex="0">
           <div class="topcity-report box">
             <div class="chart-title">
               <h3>Top 10 thành phố tiêu thụ cao nhất</h3>
@@ -121,13 +120,13 @@
                 <div class="col-sm-6">
                   <div class="city-report box">
                     <div class="city-report_title">
-                      <h3>Hồ Chí Minh</h3>
+                      <h3>Hà Nội</h3>
                     </div>
-                    <p>10.203.321 <span>kWh</span> <small>cao nhất cả nước</small></p>
+                    <p>9.198.707 <span>kWh</span> <small>cao thứ 2 cả nước</small></p>
                     <table>
                       <tr>
                         <td class="txt-success">Quận tiêu thụ điện cao nhất</td>
-                        <td><a href="javascript:goZone(1);">Quận 1</a></td>
+                        <td><a href="javascript:goZone(2);">Quận Cầu Giấy</a></td>
                       </tr>
                       <tr>
                         <td class="txt-success">Thiết bị phổ biến</td>
@@ -154,13 +153,13 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade show active" id="zone-tab-pane" role="tabpanel" tabindex="0">
+        <div class="tab-pane fade" id="zone-tab-pane" role="tabpanel" tabindex="0">
           <form class="row g-4 form-filter">
             <div class="col-sm-3">
               <select class="form-select">
                 <option>Chọn tỉnh thành</option>
-                <option value="hn">Hà Nội</option>
-                <option value="hcm" selected>TP. Hồ Chí Minh</option>
+                <option value="hn" selected>Hà Nội</option>
+                <option value="hcm">TP. Hồ Chí Minh</option>
                 <option value="dn">Đà Nẵng</option>
                 <option value="nt">Nha Trang</option>
                 <option value="ct">Cần Thơ</option>
@@ -179,17 +178,15 @@
             <div class="col-sm-3">
               <select class="form-select">
                 <option>Chọn quận huyện</option>
-                <option value="" selected>Quận 1</option>
-                <option value="">Quận 2</option>
-                <option value="">Quận 3</option>
-                <option value="">Quận 4</option>
+                <option value="" selected>Cầu Giấy</option>
+                <option value="">Ba Đình</option>
               </select>
             </div>
             <div class="col-sm-3">
               <select class="form-select">
                 <option selected>Chọn phường xã</option>
-                <option value="">Bến Nghé</option>
-                <option value="">Bến Thành</option>
+                <option value="">P. Quan Hoa</option>
+                <option value="">P. Mai Dịch</option>
               </select>
             </div>
             <div class="col-sm-3">
@@ -202,11 +199,11 @@
           <div class="sub-breadcrumb">
             <ul class="breadcrumb">
               <li><span>Dữ liệu của</span></li>
-              <li><span>Hồ Chí Minh</span></li>
+              <li><span>Hà Nội</span></li>
               <li><span class="divider"><img src="../assets/images/chevrons-right.svg" alt=""></span></li>
-              <li class="breadcrumb-item"><span>Quận 1</span></li>
+              <li class="breadcrumb-item"><span>Quận Cầu giấy</span></li>
               <li><span class="divider"><img src="../assets/images/chevrons-right.svg" alt=""></span></li>
-              <li class="breadcrumb-item"><span>Phường Bến Thành, phường Bến Nghé</span></li>
+              <li class="breadcrumb-item"><span>Phường Quan Hoa, phường Mai Dịch</span></li>
             </ul>
           </div>
           <div class="list-block">
@@ -259,9 +256,7 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-sm-4">
-                  <div style="height: 250px;">
-                    <canvas id="doughnut"></canvas>
-                  </div>
+                  <canvas id="doughnut"></canvas>
                 </div>
                 <div class="col-sm-8">
                   <div style="height: 250px;">
@@ -291,9 +286,7 @@
             </ul>
             <div class="tab-content">
               <div class="tab-pane fade show active" id="hour-tab-pane" role="tabpanel" tabindex="0">
-                <div style="height: 500px;">
-                  <canvas id="hourchart"></canvas>
-                </div>
+                <canvas id="hourchart"></canvas>
               </div>
               <div class="tab-pane fade" id="day-tab-pane" role="tabpanel" tabindex="0">
                 <canvas id="daychart"></canvas>
@@ -318,7 +311,7 @@
   <script src="../assets/js/index.js"></script>
   <script src="../assets/js/circle.js"></script>
   <script src="../assets/js/horizontal.js"></script>
-  <script src="../assets/js/charthour.js"></script>
+  <script src="../assets/js/charthour-hanoi.js"></script>
   <script src="../assets/js/chartday.js"></script>
   <script src="../assets/js/chartmonth.js"></script>
   <script src="../assets/js/charttop.js"></script>
