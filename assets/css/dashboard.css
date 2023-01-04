@@ -87,6 +87,7 @@
 }
 
 .city-report,
+.city-list,
 .device-report {
   padding: 24px 12px;
 }
@@ -122,4 +123,19 @@
 }
 .city-report table tr td.txt-success {
   color: #3BA815;
+}
+
+.city-list_title h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.city-list .table-responsive {
+  height: 200px;
+}
+.city-list table {
+  width: 100%;
+}
+.city-list table th,
+.city-list table td {
+  padding: 8px 4px;
 }

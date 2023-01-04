@@ -1,5 +1,6 @@
 new Chart(document.getElementById('statuschart'), {
   type: 'pie',
+  plugins: [ChartDataLabels],
   data: {
     labels: ['Hoạt động', 'Gián đoạn'],
     datasets: [
@@ -17,7 +18,19 @@ new Chart(document.getElementById('statuschart'), {
       },
       title: {
         display: false,
+      },
+      datalabels: {
+        anchor: 'center',
+        align: 'end',
+        color: '#FFFFFF',
+        labels: {
+          title: {
+            font: {
+              size: 18,
+            }
+          },
+        }
       }
-    }
+    },
   },
 })

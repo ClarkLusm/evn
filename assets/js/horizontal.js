@@ -3,7 +3,7 @@ new Chart(document.getElementById('barchart'), {
   plugins: [ChartDataLabels],
   type: 'bar',
   data: {
-    labels: ['Unknown', 'Chillers', 'Air compr..', 'Pumps', 'Air handie..', 'Mixers'],
+    labels: ['Lò vi sóng', 'Điều hòa', 'Nóng lạnh', 'Tivi', 'Bếp từ', 'Tủ lạnh'],
     datasets: [{
       axis: 'y',
       data: [333, 215, 151, 61.9, 60.8, 48.7],

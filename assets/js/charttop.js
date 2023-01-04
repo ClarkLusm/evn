@@ -5,12 +5,12 @@ var chart = new Chart(document.getElementById('topchart'), {
     labels: ['Hải Phòng', 'Ninh Bình', 'Hồ Chí Minh', 'Đà Nẵng', 'Bình Dương', 'Nam Định', 'Thanh Hóa', 'Nha Trang', 'Hà Nội', 'Khánh Hòa',],
     datasets: [
       {
-        data: [198, 132, 350, 210, 210, 73, 150, 218, 268, 62],
+        data: [49800, 13200, 94000, 61000, 63020, 10300, 15000, 21800, 86800, 16200],
         backgroundColor: function (context) {
-          return [350, 268].includes(context.raw) ? '#EB5757' : '#0682F4';
+          return context.raw == 94000 ? '#EB5757' : context.raw == 86800 ? '#EE7A14' : '#0682F4';
         },
         fill: false,
-        barThickness: 21,
+        barThickness: 40,
         categorySpacing: 0.5,
       },
     ]
@@ -29,7 +29,7 @@ var chart = new Chart(document.getElementById('topchart'), {
         anchor: 'end',
         align: 'start',
         color: '#FFFFFF',
-      }
+      },
     },
     scales: {
       x: {
@@ -45,7 +45,13 @@ var chart = new Chart(document.getElementById('topchart'), {
           display: false
         },
         title: {
-          text: 'kWh'
+          display: true,
+          text: 'kWh',
+        },
+        ticks: {
+          callback: function (value, index, ticks) {
+            return `${value / 1000}k`;
+          }
         },
       }
     },
