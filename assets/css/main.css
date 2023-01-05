@@ -379,6 +379,10 @@ main .main-nav .nav-link.active {
 .city-list table td {
   padding: 8px 4px;
 }
+.city-list table th a,
+.city-list table td a {
+  color: #333333;
+}
 
 .form-filter {
   margin-bottom: 18px;

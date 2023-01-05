@@ -178,6 +178,10 @@
     th,
     td {
       padding: 8px 4px;
+
+      a {
+        color: $textColor;
+      }
     }
   }
 }
