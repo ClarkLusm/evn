@@ -12,49 +12,7 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="../assets//images/logo.svg" alt="logo">
-    </div>
-    <div class="user-area">
-      <button class="user-area_notify">
-        <img src="../assets/images/bell.svg" alt="">
-        <span class="dot"></span>
-      </button>
-      <div class="user-area_display dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownUser" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          <img class="user-area_display__avatar" src="../assets/images/avatar.png" alt="">
-          <span class="user-area_display__fullname">Esther Howard</span>
-          <img src="../assets/images/arrow-down.svg" alt="">
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownUser">
-          <li><a class="dropdown-item" href="#">Thông tin tài khoản</a></li>
-          <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
   <div class="d-flex">
-    <aside>
-      <ul>
-        <li class="active"><a href=""><img src="../assets/images/element_equal-active.svg" alt=""> <span>Trang
-              chủ</span></a>
-        </li>
-        <li>
-          <a data-bs-toggle="collapse" href="#warning">
-            <img src="../assets/images/danger.svg" alt="">
-            <span>Cảnh báo</span>
-            <img src="../assets/images/arrow-down.svg" class="float-end"></a>
-          <ul class="collapse multi-collapse" id="warning">
-            <li><a href="./list-warning.html">Danh sách cảnh báo</a></li>
-            <li><a href="./config-warning.html">Cấu hình cảnh báo</a></li>
-          </ul>
-        </li>
-        <li><a href="./device-manage.html"><img src="../assets/images/electricity.svg" alt=""> <span>Quản lý thiết
-              bị</span></a></li>
-      </ul>
-    </aside>
     <main class="main">
       <div class="main-breadcrumb">
         <ul class="breadcrumb">
@@ -70,10 +28,6 @@
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="zone-tab" data-bs-toggle="tab" data-bs-target="#zone-tab-pane" type="button"
             role="tab" aria-controls="zone-tab-pane" aria-selected="false">Khu vực</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="device-tab" data-bs-toggle="tab" data-bs-target="#device-tab-pane" type="button"
-            role="tab" aria-controls="device-tab-pane" aria-selected="false">Thiết bị</button>
         </li>
       </ul>
       <div class="tab-content">
@@ -338,6 +292,8 @@
               <li><span>Hồ Chí Minh</span></li>
               <li><span class="divider"><img src="../assets/images/chevrons-right.svg" alt=""></span></li>
               <li class="breadcrumb-item"><span>Quận 1</span></li>
+              <li><span class="divider"><img src="../assets/images/chevrons-right.svg" alt=""></span></li>
+              <li class="breadcrumb-item"><span>Phường Bến Nghé, phường Bến Thành</span></li>
             </ul>
           </div>
           <div class="list-block">
@@ -365,7 +321,9 @@
               <div class="col-sm-3">
                 <div class="list-block_item">
                   <div class="d-flex">
-                    <label>Thiết bị phổ biến nhất</label>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#popup">
+                      <label>Thiết bị phổ biến nhất</label>
+                    </button>
                   </div>
                   <p>5.901 <span>thiết bị</span></p>
                   <small><span>Bình nóng lạnh</span></small>
@@ -433,9 +391,88 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="device-tab-pane" role="tabpanel" tabindex="0"></div>
       </div>
     </main>
+  </div>
+  <div class="modal" id="popup">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Thiết bị phổ biến nhất</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><span class="h5 text-success">Bình nóng lạnh</span> <span class="h6">5.901 thiết bị</span></p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Hãng</th>
+                <th>Model</th>
+                <th>Số lượng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ariston</td>
+                <td>Blu 30R</td>
+                <td>510</td>
+              </tr>
+              <tr>
+                <td>Ariston</td>
+                <td>Blu SI2</td>
+                <td>612</td>
+              </tr>
+              <tr>
+                <td>Rossi</td>
+                <td>Rubis RRS 20SQ</td>
+                <td>401</td>
+              </tr>
+              <tr>
+                <td>Ferroli</td>
+                <td>MIDO-DE</td>
+                <td>322</td>
+              </tr>
+              <tr>
+                <td>Electrolux</td>
+                <td>EWS302DX-DWM</td>
+                <td>602</td>
+              </tr>
+              <tr>
+                <td>Picenza</td>
+                <td>S30 Lux</td>
+                <td>198</td>
+              </tr>
+              <tr>
+                <td>Panasonic</td>
+                <td>DH-20HAMVW</td>
+                <td>993</td>
+              </tr>
+              <tr>
+                <td>Panasonic</td>
+                <td>DH-30HAMVW</td>
+                <td>801</td>
+              </tr>
+              <tr>
+                <td>SHC</td>
+                <td>Luxury 20L</td>
+                <td>107</td>
+              </tr>
+              <tr>
+                <td>Atlantic</td>
+                <td>Neo Max</td>
+                <td>192</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="viewmore d-flex justify-content-center">
+            <a href="">Xem thêm...</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"

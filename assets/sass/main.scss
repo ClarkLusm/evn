@@ -46,6 +46,15 @@ li {
   list-style: none;
 }
 
+table {
+  width: 100%;
+
+  td,
+  th {
+    padding: 4px;
+  }
+}
+
 .box {
   background-color: #FFF;
   border: 1px solid #F2F2F5;
@@ -297,6 +306,8 @@ main {
     border-width: 0 0.16em 0.16em 0;
   }
 }
+
+.modal {}
 
 @import './dashboard.scss';
 @import './zone.scss';

@@ -64,6 +64,12 @@
     padding: 20px;
     height: 100%;
 
+    button {
+      padding: 0;
+      border: none;
+      background-color: unset;
+    }
+
     label {
       font-size: $fontSize;
       font-weight: bold;
