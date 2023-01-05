@@ -238,6 +238,16 @@ main .main-nav .nav-link.active {
   border-radius: 8px;
 }
 
+.bootstrap-select {
+  width: 100% !important;
+  border: 1px solid #E4E4EB;
+  outline: none !important;
+  border-radius: 6px;
+}
+.bootstrap-select .bs-ok-default:after {
+  border-width: 0 0.16em 0.16em 0;
+}
+
 .topcity-report {
   padding: 28px 24px 30px;
   margin-bottom: 24px;
